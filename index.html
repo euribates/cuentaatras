@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuenta atras</title>
+  <link rel="stylesheet" href="bulma.css" type="text/css">
+  <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+ <main>
+
+  <section class="section">
+    <div class="values">
+      <div class="grid">
+        <div class="cell">
+        <button class="button is-warning" id="pb_reset">Reiniciar</button>  
+        </div>
+        <div class="cell">
+        <input class="input is-rounded" type="number"
+               min="0" max="23"
+               id="max_hours"
+               value="01"
+               placeholder="Horas"
+               >
+        </div>
+        <div class="cell">
+          <input class="input is-rounded" type="number"
+                 min="0" max="59"
+                 id="max_minutes"
+                 value="00"
+                 placeholder="Minutos"
+                 >
+        </div>
+        <div class="cell">
+          <button class="button is-primary" id="pb_start">Empezar</button>  
+        </div>
+      </div>
+  </div>
+
+    <p class="contador">
+      <span id="horas">00</span>:<span id="minutos">00</span>:<span id="segundos">00</span>
+    </p>
+
+  </section>
+ </main>
+    
+<script type="text/javascript" src="jquery.js" type="javascript"></script>
+<script type="text/javascript" src="index.js" type="javascript"></script>
+</body>
+</html>
